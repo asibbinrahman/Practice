@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="task.css">
+    <style>
+    .task1{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    width:max-content
+}
+
+.left{
+    background-color: rgb(163, 185, 128);
+    height: 250px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    background-color: rgb(207, 252, 134);
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .task1{
+       display: grid; 
+    }
+    .left{
+        width: 100%;
+        height: 100px;
+    }
+
+    .right{
+        height: 300px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <div class="task1">
+        <div class="left">
+            Left
+        </div>
+        <div class="right">
+            Right
+        </div>
+    </div>
+</body>
+</html>

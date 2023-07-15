@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .row{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        .row > div{
+            flex: 1;
+        }
+
+        .vertical-collage{
+            height: calc((100% - 5px)/2);
+            margin-bottom: 5px;     }
+
+        .box-collage{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        /* Responsive Media Query */
+
+        @media screen and (max-width:576px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+
+            .box-collage{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* For Medium Devices */
+
+        @media screen and (max-width:576px) and (min-width:982px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>My Picture Collage</h1>
+        <div class="row">
+            <img src="images/A.jpg" alt="">
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/B.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/C.jpg" alt="">
+            </div>
+            <div class="vertical-collage">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="box-collage">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/H.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
