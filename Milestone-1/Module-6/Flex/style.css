@@ -1,0 +1,15 @@
+.test{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.test img{
+    height: 200px;
+    width: 150px;
+
+}
