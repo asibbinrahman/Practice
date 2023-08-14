@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus ut, accusamus pariatur ex odio? Perspiciatis cupiditate necessitatibus iusto, sint impedit ad, unde pariatur placeat voluptatem doloribus non id. Repellat!</p>
+    </header>
+
+    <main class="mainContainer">
+        <section>
+            <h1>My Favourite Fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Orange</li>
+                <li>Goaba</li>
+            </ul>
+        </section>
+
+        <section id="placea-container">
+            <h1>My Favourite Places</h1>
+            <ul>
+                <li class="important-places">Coxbazar</li>
+                <li class="important-places">Bandorbon</li>
+                <li class="important-places">Barisal</li>
+                <li class="important-places">Sylhet</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="game-title" class="game-color">My Favourite Game</h1>
+            <ul id="game-list">
+                <li>Cricket</li>
+                <li>Football</li>
+                <li>Badminton</li>
+                <li>Pool</li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <script>
+        const listItem = document.getElementsByTagName('li');
+        // console.log(listItem); 
+        for (const li of listItem){
+            // console.log(li);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const h1 of allHeadings){
+            // console.log(h1.innerText);
+        }
+
+        const places = document.getElementsByClassName('important-places');
+        for (const place of places){
+            // console.log(place);
+        }
+
+        const sections = document.querySelectorAll('section');
+        for (const section of sections){
+            console.log(section);
+            section.style.border = "2px solid blue";
+            section.style.margin = "5px";
+            section.style.borderRadius = "5px";
+        }
+        const placeaContainer = document.getElementById('placea-container');
+        placeaContainer.style.backgroundColor = "yellow";
+    
+        const gameList = document.getElementById("game-list");
+
+        const li = document.createElement('li');
+        li.innerText = "Hadudu";
+
+        gameList.appendChild(li);
+
+    </script>
+
+</body>
+</html>
