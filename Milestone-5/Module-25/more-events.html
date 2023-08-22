@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>More Event</h1>
+    <button id="more-event">Events</button>
+    <input id="text-field" type="text">
+
+ 
+
+    <script>
+        // document.getElementById('text-field').addEventListener('focus', function(){
+        //     console.log("Focus inside the input field  ");
+        // })
+
+        // document.getElementById('text-field').addEventListener('blur', function(){
+        //     console.log("Focus inside the input field blur ");
+        // })
+
+        document.getElementById('text-field').addEventListener('keydown', function(){
+        console.log("Focus inside the input field blur ");
+        })
+
+
+        document.getElementById('more-event').addEventListener('mousemove', function(){
+            console.log("click");
+        })
+    </script>
+</body>
+</html>

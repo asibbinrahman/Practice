@@ -9,9 +9,9 @@
     <h1>Please add your Comment</h1>
     <div id="comment-container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi distinctio. Rem tempora voluptate eum quas inventore illo totam quia praesentium corporis facilis molestias eius vitae debitis cum, consectetur vero expedita accusamus ullam non animi fuga quibusdam eaque? Distinctio fugiat repellat iusto aliquid ducimus cum molestias id illum libero nisi deserunt laboriosam veniam, hic nemo iste odio quas perferendis eligendi iure. Vel, enim eum, doloribus reprehenderit voluptatum praesentium aperiam in mollitia pariatur ad nihil accusamus nesciunt minima eveniet! Qui obcaecati, officia est deserunt corporis assumenda totam repudiandae accusamus dicta veniam. Ut cupiditate vel ducimus quisquam dicta illo quis corporis placeat.</p>
-    </div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi distinctio. Rem tempora voluptate eum quas inventore illo totam quia praesentium corporis facilis molestias eius vitae debitis cum, consectetur vero expedita accusamus ullam non animi fuga quibusdam eaque? Distinctio fugiat repellat iusto aliquid ducimus cum molestias id illum libero nisi deserunt laboriosam veniam, hic nemo iste odio quas perferendis eligendi iure. Vel, enim eum, doloribus reprehenderit voluptatum praesentium aperiam in mollitia pariatur ad nihil accusamus nesciunt minima eveniet! Qui obcaecati, officia est deserunt corporis assumenda totam repudiandae accusamus dicta veniam. Ut cupiditate vel ducimus quisquam dicta illo quis corporis placeat.</p>
-    </div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eligendi distinctio. Rem tempora voluptate eum quas inventore illo totam quia praesentium corporis facilis molestias eius vitae debitis cum, consectetur vero expedita accusamus ullam non animi fuga quibusdam eaque? Distinctio fugiat repellat iusto aliquid ducimus cum molestias id illum libero nisi deserunt laboriosam veniam, hic nemo iste odio quas perferendis eligendi iure. Vel, enim eum, doloribus reprehenderit voluptatum praesentium aperiam in mollitia pariatur ad nihil accusamus nesciunt minima eveniet! Qui obcaecati, officia est deserunt corporis assumenda totam repudiandae accusamus dicta veniam. Ut cupiditate vel ducimus quisquam dicta illo quis corporis placeat.</p>
     </div>
 
@@ -22,13 +22,20 @@
 
     <script>
         document.getElementById('btn-post').addEventListener('click', function(){
+    
+
             const commentBox = document.getElementById('new-comment');
             const newComment = commentBox.value;
-
+            
             const commentContainer = document.getElementById('comment-container');
-            const p = document.createElement('p');
-            p.innerTextv= newComment;
+            const p = document.createElement("p");
+            p.innerText = newComment;
             commentContainer.appendChild(p);
+
+            commentBox.value = " ";
+
+
+
 
 
 
